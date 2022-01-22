@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log In </title>
+</head>
+
+<body>
+  <style>
+    body{
+      background:content-box radial-gradient(#FF5BDB,#9847ff);
+    }   
+  </style>
+  
+  <style>
+    .logo{
+      display: flex;
+      text-align: left;
+     
+      padding: 60px;        
+      color: rgb(253, 250, 250);
+      font-size: 15px; 
+      justify-content: center;
+      overflow: hidden ;
+      align-items: center;
+      font-family:'josefin sans';    
+    } 
+         </style>
+     
+     <!--logo-->
+     <div class="logo">
+       <h1 style=" position: absolute;top: 50px;left:10px;width: 200px; height: 150px;" >SHOPE<span><b>C</b></span><span><b>A</b></span><span><b>R</b></span><span>T</span></h1>
+     <h6 style=" position: absolute;top: 80px;left:120px;width: 200px; height: 150px;">Hope Lives Here</h6>
+      
+     <!-- google translator -->
+     <Style>
+       .topnav{
+        position:absolute;
+        top: 50px;
+        left: 70px;
+       }
+     </Style>
+       <div>   
+          <a href="javascript:void(0);" class="topnav-icons fa Shopecart-right shopecart-bar-item Shopecart-button" onclick="gTra(this)" title="Translate shopecart"></a>
+          <svg width="20" height="20"viewBox="0 0 13 13"></svg>
+        </div>
+             <!--search button-->
+      <style>
+        *,
+        *::after,
+        *::before {
+          margin: 0;
+          padding: 0;
+          box-sizing: inherit;
+        }
+        html {
+          font-size: 50%;
+        }
+        body {
+          box-sizing: border-box;
+        }
+        .container1 {
+          width: 25rem;
+          height: 100%;
+          margin: 0 1rem;
+          
+        }
+       
+        .searchbar {
+          font-size: 2.4rem;
+          width: 25rem;
+          height: 5rem;
+          border: none;
+          outline: none;
+          border-radius: 10rem;
+          padding: 2rem;
+          transition: all .1s;
+          transition-delay: .1s;
+        }
+        .searchbar:hover {
+          width: 26rem;
+          height: 4rem;
+        }
+        .button {
+          height: 2rem;
+          position: absolute;
+          top: 1.5rem;
+          right: 1rem;
+          transition: all .1s;
+          transition-delay: .1s;
+        }
+        .button:hover {
+          cursor: pointer;
+        }
+        .searchbar:hover + .button {
+          height: 2.5rem;
+          top: 3.8rem;
+          right: 5;
+        }
+        .searchbar::placeholder {
+          opacity: 0.2;
+        }
+      </style>
+  
+      <div class="container1">
+        <input type="text" maxlength="12" placeholder="Search" class="searchbar">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/41gYkruZM2L.png" alt="search icon" class="button">
+      </div>  
+      </div>
+    
+                    
+<style>
+  *{
+    box-sizing: border-box;
+     font-family: 'poppins',sans-serif;
+  }
+  .close{ 
+    color: black;
+
+  }
+  
+ .container{
+  position: absolute;
+          top: 5%;
+          left: 50%;
+          transform: translate(-50%,50%);
+          width: 280px;
+          height: 480px;
+          box-shadow: 0 2px 4px rgba(0,0,0,.1),0 4px 8px rgba(0,0,0,.1);
+          border-radius: 20px;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: .8rem;
+          color: #26242e;
+          background: #f6f8fb;
+        }
+          .input{
+            width: 250px;
+            height: 470px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+        }
+
+        .input-field{
+            border: none;
+            width: 250px;
+            height: 45px;
+            border: 1px solid #dbdbdb;
+            border-radius: 4px;
+            padding-left: .7rem;
+            outline: none;
+        }
+        ::placeholder{
+            color: #bfbfbf;
+        }
+        .radio-btn{
+            width: 100%;
+            height: 45px;
+            display: flex;
+        }
+        .radio-btn input{
+            display: none;
+        }
+        .radio-btn label{
+            position: relative;
+            width: 100px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            background: #fff;
+            margin-right: .3rem;
+        }
+        .mark{
+            position: relative;
+            display: block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #bfbfbf;
+            border-radius: 50%;
+            transition: .3s;
+        }
+        .mark::before{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 13px;
+            height: 13px;
+            background: #1294fc;
+            border-radius: 50%;
+            opacity: 0;
+            transition: .3s;
+        }
+        .btn-border{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 45px;
+            border: 1px solid #dbdbdb;
+            border-radius: 4px;
+        }
+        input[type="radio"]:checked ~ .mark{
+            border-color: #1294fc;
+        }
+        input[type="radio"]:checked ~ .btn-border{
+            border-color: #1294fc;
+        }
+        input[type="radio"]:checked ~ .mark::before{
+            opacity: 1;
+        }
+        .text{
+            display: flex;
+            align-items: center;
+            font-size:1.4rem;
+        }
+        .btn button{
+            width: 250px;
+            height: 45px;
+            border-radius: 45px;
+            border: none;
+            outline: none;
+            background: #1294fc;
+            color: #fff;
+        }
+
+</style> 
+            <!--LOG In Account-->           
+             <div class="container">
+               <div class="text">           
+                  <div id="id01" class="modal">
+                <span onclick="document.getElementById('id01').style.display='none'"
+              class="close" title="Close Modal">&times;</span>
+               <div class="input">
+              <H1>Sign In</H1>
+               <label for="uname"><b>Username</b></label>
+               <input type="text" placeholder="Enter Username" name="uname" required class="input-field"/>
+         
+               <label for="psw"><b>Password</b></label>
+               <input type="password" placeholder="Enter Password" name="psw" required class="input-field">
+               <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+               <div class="btn">
+                <button type="submit">log in</button>
+              </div>
+              <!--forgot password -->
+              </span>
+               <span class="psw">Forgot <a href="#">password?</a>
+                "need an account? "
+               <a href="/user registration"> sign up</a>
+               </span>
+            <p>new account?</p>
+            <div class="btn">   
+            <button>
+               <a style="color: white;"  href="http://127.0.0.1:5500/Registration%20form2.html">Create New account  
+            </button>
+          </div>
+
+               </div>
+          </div> 
+        </div>
+  
+          </div>
+        
+               <style>
+                footer{
+                  position: fixed;
+                  width: 100%;
+                  left: 0;
+                  bottom: 0;
+                  background-color: gray;
+                  color: whitesmoke;
+                  text-align: center;
+                  padding: 1em;
+                }
+                </style>
+              <footer>
+                <p>copyright &copy;2022 THE SHOPECART.</p>
+              </footer>
+
+             </div>
+            </body>
+            </html>         
+            

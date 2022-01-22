@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+</head>
+
+<body>
+    <style>
+        body{
+          background-image: linear-gradient(to bottom right,#4affde 0%,#5b9dff 40%,#d06bff 60%,#ff34d2 100%);
+          background-size: 800% 800%;
+          animation: movingGradient 5s linear infinite alternate;
+         margin: 0%;
+         padding: 0%;
+           }
+           @keyframes movingGradient{
+             from{background-position: 0 0;}
+             to{background-position: 30% 30%;}
+           }
+    
+      </style>
+      <style>
+        .logo{
+          display: flex;
+          text-align: left;
+          position: relative;
+          padding: 60px;  
+          color: rgb(253, 250, 250);
+          font-size: 15px; 
+          justify-content: center;
+          overflow: hidden ;
+          align-items: center;
+          font-family:'josefin sans';
+              
+        } 
+         </style>
+         
+         <!--logo-->
+         <div class="logo">
+           <h1 style=" position: absolute;top: 50px;left:10px;width: 200px; height: 150px;" >SHOPE<span><b>C</b></span><span><b>A</b></span><span><b>R</b></span><span>T</span></h1>
+         <h6 style=" position: absolute;top: 80px;left:120px;width: 200px; height: 150px;">Hope Lives Here</h6>
+         </div>
+    <style>
+        *{
+        box-sizing: border-box;
+        font-family: 'poppins', sans-serif;
+        }
+        .container{
+            
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            bottom: 10%;
+            transform: translate(-50%,30%);
+            width: 280px;
+            height: 480px;
+            box-shadow: 0 2px 4px rgba(0,0,0,.1),0 4px 8px rgba(0,0,0,.1);
+            border-radius: 20px;
+            overflow:hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: .8rem;
+            color: #26242e;
+            background: #f6f8fb;
+            
+        }
+        .input{
+            width: 250px;
+            height: 470px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+        }
+        .input-field{
+            border: none;
+            width: 250px;
+            height: 45px;
+            border: 1px solid #dbdbdb;
+            border-radius: 4px;
+            padding-left: .7rem;
+            outline: none;
+        }
+        ::placeholder{
+            color: #bfbfbf;
+        }
+        .radio-btn{
+            width: 100%;
+            height: 45px;
+            display: flex;
+        }
+        .radio-btn input{
+            display: none;
+        }
+        .radio-btn label{
+            position: relative;
+            width: 100px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            background: #fff;
+            margin-right: .3rem;
+        }
+        .mark{
+            position: relative;
+            display: block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #bfbfbf;
+            border-radius: 50%;
+            transition: .3s;
+        }
+        .mark::before{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 13px;
+            height: 13px;
+            background: #1294fc;
+            border-radius: 50%;
+            opacity: 0;
+            transition: .3s;
+        }
+        .btn-border{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 45px;
+            border: 1px solid #dbdbdb;
+            border-radius: 4px;
+        }
+        input[type="radio"]:checked ~ .mark{
+            border-color: #1294fc;
+        }
+        input[type="radio"]:checked ~ .btn-border{
+            border-color: #1294fc;
+        }
+        input[type="radio"]:checked ~ .mark::before{
+            opacity: 1;
+        }
+        .text{
+            display: flex;
+            align-items: center;
+        }
+        .btn button{
+            width: 250px;
+            height: 45px;
+            border-radius: 45px;
+            border: none;
+            outline: none;
+            background: #1294fc;
+            color: #fff;
+        }
+    </style>
+    <div class="container">
+        <div class="input">
+        <label>Full Name</label>
+        <input type="text" placeholder="Your name" class="input-field"/>
+        <label>Email Address</label>
+        <input type="email" placeholder="Email Address" class="input-field"/>
+        <label>password</label>
+        <input type="password" placeholder="ENTER Password" class="input-field"/>
+        <label> Confirm Password</label>
+        <input type="password" placeholder="Confirm Password" class="input-field"/>
+        <div class="text">
+            <input type="checkbox"/>
+            <p>I accept the <a href="http://127.0.0.1:5500/term%20and%20conditions.html">terms & CONDITIONS</a></p>
+        </div>
+        <div class="btn">
+            <button>Create Account</button>
+        </div>
+    </div>
+    </div>
+    <style>
+        footer{
+          position: fixed;
+          width: 100%;
+          left: 0;
+          bottom: 0;
+          background-color: gray;
+          color: whitesmoke;
+          text-align: center;
+          padding: 2px;
+        }
+        </style>
+      <footer>
+        <p>copyright &copy;2022 THE SHOPECART.</p>
+      </footer>
+      
+      
+      
+   
+</body>
+</html>        
